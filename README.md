@@ -1,12 +1,5 @@
 # This project was taken over from annikoff 
 
-see also
-
-## ComputedCustomField plugin for Redmine
-
-[![Build Status](https://travis-ci.org/annikoff/redmine_plugin_computed_custom_field.svg?branch=master)](https://travis-ci.org/annikoff/redmine_plugin_computed_custom_field)
-[![Code Climate](https://codeclimate.com/github/annikoff/redmine_plugin_computed_custom_field/badges/gpa.svg)](https://codeclimate.com/github/annikoff/redmine_plugin_computed_custom_field)
-
 ### Description:
 
 This plugin provides a possibility to create a computed custom field.
@@ -14,19 +7,6 @@ The value of the computed field can be set by formula.
 In formula constructions like `cfs[cf_id]` are replaced by IDs of custom fields.
 A valid formula is a valid Ruby code executed when a customized object is updated.
 To put a field ID in the formula, double-click on an item in the list of available fields.
-
-
-![ComputedCustomField plugin for Redmine](https://raw.githubusercontent.com/annikoff/images/master/redmine_plugin_computed_custom_field_v_1_0_3.png)
-
-### Changelog:
-
-Plugin's changelog is available [here](CHANGELOG.md).
-
-### Important information
-
-This is a new version of the plugin. Since version 1.0.0 it is not compatible with previous versions.
-The following constructions in formula `%{cf_id}` are no longer supported. Instead use `cfs[cf_id]`.
-If you need to upgrade from older versions, please check out migration section.
 
 > ### Notes:
 > - cfs[cf_id] &mdash; must be an ID of existing custom field.
@@ -39,10 +19,10 @@ If you need to upgrade from older versions, please check out migration section.
 Clone from GitHub
 ```sh
 # Latest version
-git clone https://github.com/annikoff/redmine_plugin_computed_custom_field.git computed_custom_field
+git clone https://github.com/sumeetchhetri/redmine_plugin_computed_custom_field.git computed_custom_field
 ```
 
-Or download [ZIP-archive](https://github.com/annikoff/redmine_plugin_computed_custom_field/archive/master.zip) and extract it into "computed_custom_field" directory.
+Or download [ZIP-archive](https://github.com/sumeetchhetri/redmine_plugin_computed_custom_field/archive/master.zip) and extract it into "computed_custom_field" directory.
 
 Run migrations
 ```sh
@@ -111,8 +91,8 @@ To write formulas this documentation can be helpful:
 
 ### Getting help
 
-If you need help with a formula's code read [FAQ](https://github.com/annikoff/redmine_plugin_computed_custom_field/wiki/FAQ)
-and check out [existing issues](https://github.com/annikoff/redmine_plugin_computed_custom_field/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Aquestion+) 
+If you need help with a formula's code read [FAQ](https://github.com/sumeetchhetri/redmine_plugin_computed_custom_field/wiki/FAQ)
+and check out [existing issues](https://github.com/sumeetchhetri/redmine_plugin_computed_custom_field/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Aquestion+) 
 or ask [Redmine community](https://www.redmine.org/projects/redmine/boards/2).
 
 Licensed under the [MIT-LICENSE](MIT-LICENSE)
